@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 400px;
+  height: 100vh;
+  border: 1px solid grey;
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+nav h1 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+  padding: 20px 30px;
+}
+
+header li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+  padding: 20px 0;
+  text-align: center;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+main {
+  margin: 10px 15px;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.heading h1 {
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.features ul {
+  padding: 15px;
+}
+
+.history_app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.applications ul {
+  padding: 15px;
+}
+
+code {
+  white-space: pre-line;
+  box-shadow: 10px 10px 5px grey;
+  background-color: rgb(238, 222, 222);
+  color: black;
+  padding: 10px 30px;
+}
+
+.Example {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width:718px){
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+    background-color: #fff;
+  }
+  ul{
+    display: flex;
+  }
+  li{
+    border: none;
+    margin: 0 20px;
+  }
+  nav h1 {
+    border-bottom:none;
+  }
+  
+  header li {
+    border-bottom: none;
+  }
+  
+  .features ul, .applications ul {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+}

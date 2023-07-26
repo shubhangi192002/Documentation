@@ -1,0 +1,95 @@
+$primary_color:$primary_color;
+$secondary_color:black;
+
+@mixin border{
+    border-bottom: 1px solid $primary_color;
+}
+
+@mixin padding{
+    padding: 15px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section
+{
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+}
+header
+{
+    width: 400px;
+    height: 143vh;
+    border: 1px solid $primary_color;
+}
+nav{
+ h1{
+    margin-bottom: 10px;
+    @include border;}
+
+    li
+{
+    list-style-type: none;
+    margin-bottom: 10px;
+    @include border;
+}
+a
+ {
+    text-decoration: none;
+ }
+}
+
+ main
+ {
+    margin: 10px 15px;
+
+    .introduction
+{
+    display: flex;
+    flex-direction: column;
+    @include border;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+ }
+
+.heading h1
+{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.features
+{
+    @extend .introduction;
+}
+.features{ ul
+{
+    @include padding;
+}
+}
+.history_app
+{
+    @extend .introduction;
+}
+.applications ul
+{
+    @include padding;
+}
+code
+{
+    white-space: pre-line;
+    box-shadow: 10px 10px 5px $primary_color;
+    background-color: rgb(238, 222, 222);
+    color: $secondary_color;
+    padding: 10px 30px;
+}
+.Example
+{
+    @extend .introduction;
+}
